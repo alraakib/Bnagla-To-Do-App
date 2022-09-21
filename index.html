@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bd-BD">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Metadata -->
+    <meta name="title" content="কাজের অ্যাপ - বাংলা টু-ডু অ্যাপ" />
+    <meta name="description" content="সিম্পল বাংলা টু-ডু অ্যাপ" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kajerapp.netlify.app/" />
+    <meta property="og:title" content="কাজের অ্যাপ - বাংলা টু-ডু অ্যাপ" />
+    <meta property="og:description" content="সিম্পল বাংলা টু-ডু অ্যাপ" />
+    <meta
+      property="og:image"
+      content="https://kajerapp.netlify.app/res/screenshot.png"
+    />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://kajerapp.netlify.app/" />
+    <meta property="twitter:title" content="কাজের অ্যাপ - বাংলা টু-ডু অ্যাপ" />
+    <meta property="twitter:description" content="সিম্পল বাংলা টু-ডু অ্যাপ" />
+    <meta
+      property="twitter:image"
+      content="https://kajerapp.netlify.app/res/screenshot.png"
+    />
+    <link rel="shortcut icon" href="./res/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./script/script.js" defer></script>
+    <title>কাজের অ্যাপ - বাংলা টু-ডু অ্যাপ</title>
+  </head>
+
+  <body>
+    <!-- Add new task -->
+    <div class="overlay">
+      <div class="card">
+        <!-- Task Name -->
+        <div>
+          <h1 class="title">কাজের নাম</h1>
+          <input type="text" id="taskName" autocomplete="off" />
+        </div>
+        <!-- Task Description -->
+        <div>
+          <h1 class="title">কাজের বিবরণ</h1>
+          <input type="text" id="taskDesc" autocomplete="off" />
+        </div>
+        <!-- Task Deadline -->
+        <div>
+          <h1 class="title">কাজের শেষ সময়</h1>
+          <input type="text" id="taskTime" autocomplete="off" />
+        </div>
+        <button class="filled nomargin" id="addTask">কাজ যুক্ত করুন</button>
+      </div>
+    </div>
+    <!-- Task overview -->
+    <div class="taskOverview">
+      <div class="card">
+        <!-- Header -->
+        <div class="header">
+          <h1 class="title">কাজের অ্যাপ</h1>
+          <button class="outlined" id="newTask">নতুন কাজ</button>
+        </div>
+        <!-- Incomplete Task -->
+        <div class="incomplete">
+          <h1 class="title warning">অসমাপ্ত কাজ</h1>
+        </div>
+        <!-- completed task -->
+        <div class="complete">
+          <h1 class="title success">সমাপ্ত কাজ</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
